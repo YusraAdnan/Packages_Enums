@@ -35,6 +35,19 @@ public class Student {
     
     public void displayInfo() 
     {
-        System.out.println("Student: " + name + " enrolled in: " + year);
+        switch(year)
+        {
+            case FIRST_YEAR:
+            System.out.println("Student: " + name + " enrolled in: 1st Year");
+            break;
+            
+            case SECOND_YEAR:
+            System.out.println("Student: " + name + " enrolled in: 2nd Year");
+            break;
+            
+            case THIRD_YEAR:
+            System.out.println("Student: " + name + " enrolled in: 3rd Year");
+            break;
+        }
     }
 }
