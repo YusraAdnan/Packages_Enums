@@ -35,19 +35,18 @@ public class Student {
     
     public void displayInfo() 
     {
-        switch(year)
+        if(year == YearLevel.FIRST_YEAR)
         {
-            case FIRST_YEAR:
-            System.out.println("Student: " + name + " enrolled in: 1st Year");
-            break;
-            
-            case SECOND_YEAR:
-            System.out.println("Student: " + name + " enrolled in: 2nd Year");
-            break;
-            
-            case THIRD_YEAR:
-            System.out.println("Student: " + name + " enrolled in: 3rd Year");
-            break;
+           System.out.println("Student: " + name + " enrolled in: 1st Year");
         }
+        else if(year == YearLevel.SECOND_YEAR)
+        {
+            System.out.println("Student: " + name + " enrolled in: 2nd Year");
+        }
+        else
+        {
+            System.out.println("Student: " + name + " enrolled in: 3rd Year");
+        }
+        
     }
 }
